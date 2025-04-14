@@ -8,7 +8,7 @@
         
       );
     --text-color: #fff;
-    --text-color-light: #757575;
+    --text-color-light: rgba(201, 199, 201, 0.1);
 }
 *{
     margin: 0;
@@ -25,6 +25,12 @@ body{
     background: var(--background);
     height: 100vh;
     
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 section{
     display: grid;
@@ -68,7 +74,6 @@ nav{
     border-radius: 30px;
     border: none;
     background:var(--text-color-light);
-    opacity: 0.2;
 }
 .search::placeholder {
     color: #f7f6f6;
@@ -87,6 +92,9 @@ nav{
     align-items: flex-end;
     justify-content: center;
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;   
   }
   .circle-pp{
     width: 50px;
@@ -101,6 +109,7 @@ nav{
     color: var(--text-color);
     gap: 20px;
     cursor: pointer;
+    margin: 10px solid var(--text-color-light);
   }
   .content{
     display: flex;
@@ -108,6 +117,8 @@ nav{
     align-items: flex-end;
     gap: 20px;
     z-index: 10;
+
+
   }
   .content-nav{
     display: flex;
@@ -122,4 +133,65 @@ nav{
   .click-to-follow{
     position: absolute;
     bottom: -15px;
+  }
+  .circle-pp img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+    
+    
+  }
+  .circle-one img{
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .circle-pp .profile{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+  }
+  .live{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #2f2853;
+    font-weight: 700;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .scroll-section{
+    display: flex;
+    gap: 20px;
+  }
+  .mid{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 95vh;
+    overflow-y: auto;
+    scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none; 
+  left: 0;
+  right: 0;
+  top: 20px;
+  }
+  section {
+    flex-shrink: 0;
   }
