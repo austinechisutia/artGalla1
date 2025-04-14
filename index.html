@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>ArtGalla</title>
 </head>
 <body>
@@ -12,49 +13,49 @@
      <!-- far left vertical nav -->
      <nav>
         <div class="logo">
-            <h1>ArtGalla</h1>
+            <h1>Art:Galla</h1>
         </div>
-        <div class="search"></div>
+        <div class="search" placeholder="search"></div>
         <div class="main-nav">
             <div class="nav-icons home">
-                <div class="icon"></div>
+                <div class="icon"><i class='bx bxs-home'></i></div>
                 <div class="name">For You</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons explore">
+                <div class="icon"><i class='bx bx-log-in-circle'></i></div>
                 <div class="name">Explore</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons following">
+                <div class="icon"><i class='bx bxs-user-check'></i></div>
                 <div class="name">Following</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons friends">
+                <div class="icon"><i class='bx bx-group' ></i></div>
                 <div class="name">Friends</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons upload">
+                <div class="icon"><i class='bx bxs-plus-square'></i></div>
                 <div class="name">Upload</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons message">
+                <div class="icon"><i class='bx bx-message-dots' ></i></div>
                 <div class="name">Activity</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons message">
+                <div class="icon"><i class='bx bxl-telegram' ></i></div>
                 <div class="name">Messages</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
+            <div class="nav-icons live">
+                <div class="icon"><i class='bx bx-circle'></i></div>
                 <div class="name">Live</div>
             </div>
             <div class="nav-icons home">
-                <div class="icon"></div>
+                <div class="icon"><i class='bx bx-circle'></i></div>
                 <div class="name">Profile</div>
             </div>
-            <div class="nav-icons home">
-                <div class="icon"></div>
-                <div class="name">Nore</div>
+            <div class="nav-icons more">
+                <div class="icon"><i class='bx bx-dots-horizontal-rounded' ></i></div>
+                <div class="name">More</div>
             </div>
         </div>
 
@@ -68,27 +69,44 @@
     <!-- middle-content -->
     <div class="content">
         <div class="scrollable-image">
-            <div class="image"></div>
+            <div class="image">
+                <img src="images/image1.jpeg" alt="">
+            </div>
             <div class="image-content"></div>
         </div>
         <div class="content-nav">
-            <div class="follow-profile">
+            <div class="follow-profile circle-pp">
                 <div class="profile"></div>
-                <div class="click-to-follow"></div>
+                <div class="click-to-follow">
+                    <i class='bx bxs-plus-circle' style='color:#ff0303'  ></i>
+                </div>
             </div>
-            <div class="like"></div>
-            <div class="comment"></div>
-            <div class="bookmark"></div>
-            <div class="share"></div>
-            <div class="sound"></div>
+            <div class="like circle-pp">
+                <i class='bx bxs-heart' style='color:#f7f7f7'  ></i>
+            </div>
+            <div class="comment circle-pp">
+                <i class='bx bxs-message-rounded' style='color:#f7f7f7'></i>
+            </div>
+            <div class="bookmark circle-pp">
+                <i class='bx bxs-bookmark'></i>
+            </div>
+            <div class="share circle-pp">
+                <i class='bx bxs-share' style='color:#f7f7f7' ></i>
+            </div>
+            <div class="sound circle-pp"></div>
         </div>
     </div>
 
     
 
     <!-- scroll icons -->
+
+    <div class="click-to-scroll">
+        <div class="arrow-up"><i class='bx bx-chevron-up' ></i></div>
+        <div class="arrow-down"><i class='bx bx-chevron-down'></i></div>
+    </div>
     <div class="selector">
-        <div class="click-to-scroll"></div>
+        
     </div>
    </section>
 </body>
