@@ -32,7 +32,7 @@ img{
     display: block;
     object-fit: cover;
 }
-section{
+.section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -195,3 +195,4 @@ nav{
   section {
     flex-shrink: 0;
   }
+ 
